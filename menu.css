@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,body{
+    height:100%;
+}
+
+/* Menu Settings */
+.main-nav {
+    background-color: #348;
+    width: 100%;
+    min-height: 50px;
+}
+
+.main-nav ul {
+    text-align: center;
+    letter-spacing: -1em;
+    /* this is for removing the space that is created due to display. */
+}
+
+.main-nav ul li {
+    display: inline-block;
+    letter-spacing: normal;
+    /* this is for removing the space that is created due to display. */
+}
+
+.main-nav ul li a {
+    font-size: 14px;
+    display: block;
+    line-height: 50px;
+    color: #fff;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+/* Simple hover */
+.main-nav ul li:hover {
+    background-color: rgb(10, 104, 226);
+}
+
+/* Active dropdown nav item */
+.main-nav ul li:hover>a {
+    background-color: rgb(10, 104, 226);
+}
+
+.main-nav ul li {
+    position: relative;
+}
+
+.main-nav ul li ul {
+    position: absolute;
+    background-color: rgb(235, 17, 17);
+    min-width: 100%;
+    text-align: left;
+    z-index: 999;
+    display: none;
+}
+
+.main-nav ul li ul li {
+    display: block;
+}
+
+.main-nav ul li ul ul {
+    left: 100%;
+    top: 0;
+}
+
+/* Active on Hover */
+.main-nav li:hover>ul {
+    display: block;
+}
+
+/* Arrow  */
+.caret {
+    height: 0;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 0;
+}
+
+.caret-down {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+}
+
+.caret-right {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    margin-top: -2px;
+}
+
+.drop-zone {
+	overflow: hidden;
+	background: url('./Drag_JSON_Image.png') no-repeat center;
+	background-size: cover;
+	height: 70%;
+	width: 100%;
+}
+
+.display-progress {
+	overflow: hidden;
+	text-align: center;
+	height: 10%;
+	width: 100%;
+}
